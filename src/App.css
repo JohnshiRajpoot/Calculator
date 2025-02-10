@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: radial-gradient(circle, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+
+.calculator {
+  width: 350px; 
+  padding: 20px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.calculator:hover {
+  transform: scale(1.05);
+}
+
+
+.display {
+  background: #1e1e2f;
+  color: #fff;
+  padding: 15px;
+  font-size: 1.3rem;
+  text-align: right;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  min-height: 50px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  
+}
+
+button {
+  padding: 18px;
+  width: 100%;
+  font-size: 1.4rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 12px;
+  background-color: #444;
+  color: #fff;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background-color: #666;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+  background-color: #888;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.equal {
+  background-color: #f39c12;
+  grid-column: span 2;
+  color: white;
+}
+
+.equal:hover {
+  background-color: #e67e22;
+}
+
+.clear {
+  background-color: #e74c3c;
+  grid-column: span 2;
+}
+
+.clear:hover {
+  background-color: #c0392b;
+}
+
+.backspace {
+  background-color: #3498db;
+}
+
+.backspace:hover {
+  background-color: #2980b9;
+}
+
+.percentage {
+  background-color: #9b59b6;
+}
+
+.percentage:hover {
+  background-color: #8e44ad;
+}
+
+.sqrt {
+  background-color: #1abc9c;
+  grid-column: span 2;
+  border-radius: 12px;
+}
+
+.sqrt:hover {
+  background-color: #16a085;
+}
+
+.title {
+  font-size: 1.3rem; 
+}
+
+.backspace{
+  grid-column: span 2;
+  border-radius: 12px;
+}
+
