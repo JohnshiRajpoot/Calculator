@@ -9,6 +9,7 @@ Currently, two official plugins are available:
 
 
 
+
    # **This is how it Looks :**
    
 ![Calculator Screenshot](src/assets/screenshot.png)
